@@ -2,8 +2,7 @@
 import React from "react";
 import Navbar from "./components/navbar";
 import HeroSection from "./components/herosection";
-
-import Countdown from "./components/countdown";
+import Timeline from "./components/timeline";
 import "tailwindcss";
 import './index.css';
 
@@ -15,10 +14,8 @@ const App: React.FC = () => {
 
       {/* Hero Section */}
       <HeroSection />
-
-
-      {/* Countdown */}
-      <Countdown />
+       
+ <Timeline/>
     </div>
   );
 };
