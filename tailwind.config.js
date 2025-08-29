@@ -6,7 +6,10 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {   fontFamily: {
+      chillax: ["Chillax", "sans-serif"],
+    },},
   },
   plugins: [],
 };
+
