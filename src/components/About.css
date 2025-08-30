@@ -1,5 +1,8 @@
 .about-section {
-  background: linear-gradient(135deg, #2E7D32 0%, #4CAF50 50%, #8BC34A 100%);
+  background-image: url('/plain bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   min-height: 100vh;
   padding: 4rem 2rem;
   position: relative;
