@@ -3,6 +3,7 @@ import React from "react";
 import Navbar from "./components/navbar";
 import HeroSection from "./components/herosection";
 import Timeline from "./components/timeline";
+import Registration from "./components/Registration";
 import "tailwindcss";
 import './index.css';
 
@@ -16,6 +17,7 @@ const App: React.FC = () => {
       <HeroSection />
        
  <Timeline/>
+    <Registration /> 
     </div>
   );
 };
