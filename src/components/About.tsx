@@ -21,7 +21,7 @@ const About: React.FC = () => {
           </h2>
           
           <p className="about-description">
-            SPARC is hosted by IEEE MACE SB, is a dynamic event focused on bridging academic and corporate needs. It emphasizes on developing communication and professional skills among students through expert talks and competitions refining non-technical abilities. SPARC addresses the crucial gap in communication and professional skills among students, aiming to equip them with the tools to succeed in the job market and make informed career decisions.
+            SPARC is hosted by IEEE MACE SB, is a dynamic event focused on bridging academic and corporate needs. It emphasises developing soft skills and professional proficiencies through sessions by industry experts and competitions refining non-technical abilities. SPARC addresses the crucial gap in communication and collaboration skills among students, aiming to equip them with the tools to succeed in the job market and make informed career decisions.
           </p>
 
           {/* Statistics */}
