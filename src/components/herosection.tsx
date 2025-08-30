@@ -30,8 +30,14 @@ const Countdown: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-row justify-between items-center w-full max-w-4xl px-6 py-6 
-                    rounded-full shadow-2xl shadow-black/60 bg-[#e6f9e6] border border-green-200 mx-auto">
+    <div
+      className="flex flex-row justify-between items-center w-full max-w-4xl px-6 py-6 
+                 rounded-full shadow-2xl shadow-black/60 mx-auto border"
+      style={{
+        backgroundColor: "#E5FFE6",
+        borderColor: "#90EE90", // subtle light green border
+      }}
+    >
       {["Days", "Hours", "Minutes", "Seconds"].map((label, idx) => (
         <div
           key={label}
@@ -54,22 +60,15 @@ export default function HeroSection() {
   return (
     <div className="relative">
       {/* HERO SECTION */}
-<section
-  className="relative min-h-screen flex flex-col justify-center items-start
-             px-[15%] sm:px-[18%] md:px-[20%] text-white
-             bg-cover bg-no-repeat bg-local md:bg-fixed
-             bg-[position:20%_65%] sm:bg-[position:50%_60%] lg:bg-[position:50%_55%]"
-  style={{
-    backgroundImage: "url('bg.png')",
-  }}
->
-
-
-
-
-
-
-
+      <section
+        className="relative min-h-screen flex flex-col justify-center items-start
+                   px-[15%] sm:px-[18%] md:px-[20%] text-white
+                   bg-cover bg-no-repeat bg-local md:bg-fixed
+                   bg-[position:20%_65%] sm:bg-[position:50%_60%] lg:bg-[position:50%_55%]"
+        style={{
+          backgroundImage: "url('bg.png')",
+        }}
+      >
         {/* Hero Content */}
         <motion.div style={{ y }} className="max-w-4xl w-full relative z-10">
           <h1 className="font-chillax text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-snug mb-6 drop-shadow-lg">
@@ -120,7 +119,7 @@ export default function HeroSection() {
       <div
         className="h-[100px] w-full"
         style={{
-          backgroundColor: "#e6f9e6",
+          backgroundColor: "#E5FFE6",
           backgroundImage:
             "radial-gradient(circle at 20px 20px, rgba(0,0,0,0.04) 1px, transparent 1px)",
           backgroundSize: "40px 40px",

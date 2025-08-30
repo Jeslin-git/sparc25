@@ -45,7 +45,7 @@ const TimelineSection: React.FC = () => {
     <section
       className="py-16 px-4 sm:px-6 lg:px-8"
       style={{
-        backgroundColor: "#e6f9e6",
+        backgroundColor: "#E5FFE6",
         backgroundImage:
           "radial-gradient(circle at 20px 20px, rgba(0,0,0,0.04) 1px, transparent 1px)",
         backgroundSize: "40px 40px",
@@ -53,13 +53,12 @@ const TimelineSection: React.FC = () => {
     >
       <div className="max-w-6xl mx-auto text-center">
         {/* Section Pill */}
-       <div
-  className="inline-block text-green-900 text-sm px-12 py-4 rounded-full font-bold mb-4 shadow-2xl shadow-black/60 "
-  style={{ backgroundColor: "#8DC63F" }}
->
-  Timeline of SPARC 2024
-</div>
-
+        <div
+          className="inline-block text-green-900 text-sm px-12 py-4 rounded-full font-bold mb-4 shadow-2xl shadow-black/60"
+          style={{ backgroundColor: "#8DC63F" }}
+        >
+          Timeline of SPARC 2024
+        </div>
 
         {/* Heading */}
         <h2 className="font-chillax text-2xl sm:text-3xl md:text-4xl font-bold text-green-950 mb-10">
@@ -91,7 +90,8 @@ const TimelineSection: React.FC = () => {
             {events[activeTab as keyof typeof events].map((event, idx) => (
               <div
                 key={idx}
-                className="flex items-center gap-6 p-6 rounded-2xl bg-green-100 shadow-lg"
+                className="flex items-center gap-6 p-6 rounded-2xl shadow-md"
+                style={{ backgroundColor: "#E5FFE6" }}
               >
                 {/* Placeholder Circle */}
                 <div className="w-16 h-16 bg-white rounded-full shadow-inner"></div>
@@ -109,11 +109,6 @@ const TimelineSection: React.FC = () => {
                 </div>
               </div>
             ))}
-          </div>
-
-          {/* Download Button */}
-          <div className="mt-10 flex justify-center">
-        
           </div>
         </div>
       </div>
