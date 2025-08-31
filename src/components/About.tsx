@@ -28,11 +28,11 @@ const About: React.FC = () => {
           <div className="about-stats">
             <div className="stat-item">
               <div className="stat-number">02</div>
-              <div className="stat-label">Days</div>
+              <div className="stat-label">Days Event</div>
             </div>
             <div className="stat-item">
               <div className="stat-number">10+</div>
-              <div className="stat-label">Speakers & Workshops</div>
+              <div className="stat-label">Sessions & Workshop</div>
             </div>
           </div>
 
