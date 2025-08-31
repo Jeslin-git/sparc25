@@ -7,8 +7,17 @@ const About: React.FC = () => {
       <div className="about-container">
         {/* Left side - Image placeholder */}
         <div className="about-image-container">
-          <div className="about-image-placeholder">
-            <div className="speaker-image"></div>
+          <div className="about-images">
+            <img 
+              src="/verticalimg.png" 
+              alt="Vertical event image" 
+              className="vertical-image"
+            />
+            <img 
+              src="/Horizontalimg.png" 
+              alt="Horizontal event image" 
+              className="horizontal-image"
+            />
           </div>
         </div>
 
