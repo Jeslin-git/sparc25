@@ -4,18 +4,6 @@ import "./About.css";
 const About: React.FC = () => {
   return (
     <section className="about-section">
-      {/* Decorative dots */}
-      <img 
-        src="/dots copy 2.png" 
-        alt="" 
-        className="dots-top-left"
-      />
-      <img 
-        src="/dots copy 2.png" 
-        alt="" 
-        className="dots-bottom-right"
-      />
-      
       <div className="about-container">
         {/* Left side - Image placeholder */}
         <div className="about-image-container">

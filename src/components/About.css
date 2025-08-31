@@ -9,26 +9,6 @@
   overflow: hidden;
 }
 
-.dots-top-left {
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
-  width: 120px;
-  height: auto;
-  opacity: 0.6;
-  z-index: 0;
-}
-
-.dots-bottom-right {
-  position: absolute;
-  bottom: 2rem;
-  right: 2rem;
-  width: 120px;
-  height: auto;
-  opacity: 0.6;
-  z-index: 0;
-}
-
 .about-container {
   max-width: 1200px;
   margin: 0 auto;
