@@ -27,10 +27,6 @@ const About: React.FC = () => {
           {/* Statistics */}
           <div className="about-stats">
             <div className="stat-item">
-              <div className="stat-number">2017</div>
-              <div className="stat-label">Started in</div>
-            </div>
-            <div className="stat-item">
               <div className="stat-number">02</div>
               <div className="stat-label">Days</div>
             </div>
