@@ -2,9 +2,9 @@
 
 const Registration = () => {
   const ticketTypes = [
-    { id: 1, name: "IEEE Members", price: 299, image: "ticket.png" },
-    { id: 2, name: "Non-IEEE Members", price: 399, image: "ticket.png" },
-    { id: 3, name: "NON-MACE Members", price: 499, image: "ticket.png" },
+    { id: 1, name: "IEEE Members", price: 399, image: "ticket.png" },
+    { id: 2, name: "Non-IEEE Members", price: 499, image: "ticket.png" },
+
   ];
 
   const formLink = "https://forms.gle/kHcHv2oe61TNYWCi7";
@@ -34,8 +34,7 @@ const Registration = () => {
             Buy your tickets now <br /> for SPARC 2025
           </h1>
           <p className="text-lg text-[#666] mb-12">
-            SPARC is a 2-day event. There's a mix of short 45 minutes talks <br />
-            and longer keynotes, giving you insights in a wide range of <br /> topics.
+            SPARC is a 2-day event.  - there'll be a mix of short talks, longer keynotes, collaborative initiatives, a cultural night, and so much more.
           </p>
         </div>
 
