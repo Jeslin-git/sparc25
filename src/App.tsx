@@ -14,12 +14,27 @@ const App: React.FC = () => {
       {/* Navbar */}
       <Navbar />
 
-      {/* Hero Section */}
-      <HeroSection />
-       
- <Timeline/>
-    <Registration /> 
-      <About />
+      {/* You also have a "Home" link. You can add an ID to HeroSection */}
+      <div id="home">
+        <HeroSection />
+      </div>
+  
+
+      {/* Timeline Section with ID */}
+      <div id="timeline">
+        <Timeline/>
+      </div>
+
+      {/* Registration Section with ID */}
+      <div id="sessions"> {/* Your Navbar link is "Sessions", so the id should match */}
+        <Registration />
+      </div>
+
+    {/* About Section with ID */}
+      <div id="about">
+        <About />
+      </div>
+
     </div>
   );
 };
