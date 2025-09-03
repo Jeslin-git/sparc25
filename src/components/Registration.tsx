@@ -7,29 +7,26 @@ const Registration = () => {
     { id: 3, name: "NON-MACE Members", price: 499, image: "ticket.png" },
   ];
 
-  const handleBuyTicket = (ticketId) => {
-    console.log(`Purchasing ticket with ID: ${ticketId}`);
-  };
+  const formLink = "https://forms.gle/kHcHv2oe61TNYWCi7";
 
   return (
-<section
-  className="py-16 px-4 sm:px-6 lg:px-8 min-h-screen"
-  style={{
-    backgroundColor: "#E5FFE6",
-    backgroundImage:
-      "radial-gradient(circle at 20px 20px, rgba(0,0,0,0.04) 1px, transparent 1px)",
-    backgroundSize: "40px 40px",
-  }}
->
-  <div className="max-w-6xl mx-auto text-center">
-    {/* Section Pill */}
-    <div
-      className="inline-block text-green-900 text-sm px-12 py-4 rounded-full font-bold mb-8 shadow-2xl shadow-black/60 transition"
-      style={{ backgroundColor: "#8DC63F" }}
+    <section
+      className="py-16 px-4 sm:px-6 lg:px-8 min-h-screen"
+      style={{
+        backgroundColor: "#E5FFE6",
+        backgroundImage:
+          "radial-gradient(circle at 20px 20px, rgba(0,0,0,0.04) 1px, transparent 1px)",
+        backgroundSize: "40px 40px",
+      }}
     >
-      Registration
-    </div>
-
+      <div className="max-w-6xl mx-auto text-center">
+        {/* Section Pill */}
+        <div
+          className="inline-block text-green-900 text-sm px-12 py-4 rounded-full font-bold mb-8 shadow-2xl shadow-black/60 transition"
+          style={{ backgroundColor: "#8DC63F" }}
+        >
+          Registration
+        </div>
 
         {/* Content */}
         <div className="max-w-3xl mx-auto text-center">
@@ -75,12 +72,14 @@ const Registration = () => {
               </div>
 
               {/* Button */}
-              <button
-                onClick={() => handleBuyTicket(ticket.id)}
-                className="w-full max-w-[200px] mx-auto block bg-gradient-to-r from-[#2E7D32] to-[#8BC34A] text-white px-6 py-3 rounded-full font-semibold shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+              <a
+                href={formLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full max-w-[200px] mx-auto block bg-gradient-to-r from-[#2E7D32] to-[#8BC34A] text-white px-6 py-3 rounded-full font-semibold shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center"
               >
                 Buy Tickets
-              </button>
+              </a>
             </div>
           ))}
         </div>

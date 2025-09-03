@@ -3,9 +3,11 @@ import React, { useEffect, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 
+/* ---------------- Countdown Component ---------------- */
 const Countdown: React.FC = () => {
+  const targetDate = new Date("2025-10-18T09:00:00").getTime();
+
   const calculateTimeLeft = () => {
-    const targetDate = new Date("2025-08-01").getTime();
     const now = new Date().getTime();
     const difference = targetDate - now;
 
@@ -22,6 +24,7 @@ const Countdown: React.FC = () => {
   };
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
@@ -35,7 +38,7 @@ const Countdown: React.FC = () => {
                  rounded-full shadow-2xl shadow-black/60 mx-auto border"
       style={{
         backgroundColor: "#E5FFE6",
-        borderColor: "#90EE90", // subtle light green border
+        borderColor: "#90EE90",
       }}
     >
       {["Days", "Hours", "Minutes", "Seconds"].map((label, idx) => (
@@ -43,7 +46,7 @@ const Countdown: React.FC = () => {
           key={label}
           className="text-center flex-1 min-w-[70px] sm:min-w-[100px]"
         >
-          <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-green-900">
+          <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-black">
             {Object.values(timeLeft)[idx]}
           </p>
           <span className="text-sm sm:text-base text-green-800">{label}</span>
@@ -53,6 +56,7 @@ const Countdown: React.FC = () => {
   );
 };
 
+/* ---------------- Hero Section ---------------- */
 export default function HeroSection() {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 300], [0, 50]);
@@ -109,13 +113,13 @@ export default function HeroSection() {
           </motion.button>
         </motion.div>
 
-        {/* Countdown → sits across hero + green */}
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-full flex justify-center z-20">
+        {/* Countdown */}
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full flex justify-center z-20">
           <Countdown />
         </div>
       </section>
 
-      {/* Plain green part for countdown bottom half + shadow */}
+      {/* Green bottom strip */}
       <div
         className="h-[100px] w-full"
         style={{

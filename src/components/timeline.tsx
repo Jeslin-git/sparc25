@@ -7,36 +7,113 @@ const TimelineSection: React.FC = () => {
   const events = {
     Registration: [
       {
-        name: "Registration Desk",
-        date: "01 AUG 2025",
-        time: "09:00 - 10:00",
-        heading: "Participant Check-in",
-        about: "Collect your passes and event kits.",
+        name: "Registration",
+        date: "04 SEP 2025",
+        time: "09:00 - 09:30",
+        heading: "Registration",
+        about: "Start grabbing your tickets before it runs out.",
       },
     ],
     Day1: [
       {
-        name: "Speaker Name",
-        date: "01 AUG 2025",
-        time: "10:00 - 11:00",
-        heading: "Opening Keynote",
-        about: "Kick-off the conference with inspiring talks.",
+        name: "Team SPARC",
+        date: "04 SEP 2025",
+        time: "09:30 - 10:00",
+        heading: "Ice Breaking Session",
+        about: "Interactive activities to get participants comfortable and engaged.",
       },
       {
-        name: "Workshop Host",
-        date: "01 AUG 2025",
-        time: "11:30 - 13:00",
-        heading: "Innovation Workshop",
-        about: "Hands-on session to brainstorm new ideas.",
+        name: "Organizers",
+        date: "04 SEP 2025",
+        time: "10:00 - 14:00",
+        heading: "IV / Field Trip with Lunch",
+        about: "Explore and learn with an exciting field trip followed by lunch.",
+      },
+      {
+        name: "Team SPARC",
+        date: "04 SEP 2025",
+        time: "14:00 - 14:30",
+        heading: "Break",
+        about: "Refresh yourself before the next session.",
+      },
+      {
+        name: "Facilitators",
+        date: "04 SEP 2025",
+        time: "14:30 - 16:00",
+        heading: "Team Building Session",
+        about: "Activities to develop teamwork and collaboration skills.",
+      },
+      {
+        name: "Organizers",
+        date: "04 SEP 2025",
+        time: "16:30 - 17:00",
+        heading: "Tea Break",
+        about: "Relax and network over tea.",
+      },
+      {
+        name: "SPARC Volunteers",
+        date: "04 SEP 2025",
+        time: "17:00 - 18:00",
+        heading: "Fun Games",
+        about: "Engaging and fun activities for all participants.",
+      },
+      {
+        name: "Participants",
+        date: "04 SEP 2025",
+        time: "18:00 - 19:00",
+        heading: "Culturals",
+        about: "Enjoy performances and cultural programs.",
       },
     ],
     Day2: [
       {
-        name: "Panelists",
-        date: "02 AUG 2025",
-        time: "09:30 - 11:00",
-        heading: "Panel Discussion",
-        about: "Industry experts discuss future trends.",
+        name: "Experts",
+        date: "05 SEP 2025",
+        time: "09:00 - 10:30",
+        heading: "Cracking Interviews & Excelling in Group Discussions",
+        about: "Learn interview skills and GD strategies.",
+      },
+      {
+        name: "Organizers",
+        date: "05 SEP 2025",
+        time: "10:30 - 11:00",
+        heading: "Tea Break",
+        about: "Take a short refreshment break.",
+      },
+      {
+        name: "Finance Speaker",
+        date: "05 SEP 2025",
+        time: "11:00 - 12:30",
+        heading: "Finance 101 - Understanding Money Basics",
+        about: "Gain knowledge about financial fundamentals.",
+      },
+      {
+        name: "Team SPARC",
+        date: "05 SEP 2025",
+        time: "12:30 - 13:30",
+        heading: "Lunch",
+        about: "Lunch break to relax and recharge.",
+      },
+      {
+        name: "Leadership Coach",
+        date: "05 SEP 2025",
+        time: "13:30 - 15:00",
+        heading: "Becoming a Leader: Decision Making & Critical Thinking",
+        about: "Sharpen your leadership and problem-solving abilities.",
+      },
+      {
+        name: "Career Mentor",
+        date: "05 SEP 2025",
+        time: "15:00 - 16:00",
+        heading: "LinkedIn Lectures",
+        about: "Learn to leverage LinkedIn for networking and opportunities.",
+      },
+      {
+        name: "Organizers",
+        date: "05 SEP 2025",
+        time: "16:00 - 17:00",
+        heading: "Closing Ceremony",
+        about: "Wrap-up of SPARC 2025 with acknowledgments and reflections.",
       },
     ],
   };
@@ -57,7 +134,7 @@ const TimelineSection: React.FC = () => {
           className="inline-block text-green-900 text-sm px-12 py-4 rounded-full font-bold mb-4 shadow-2xl shadow-black/60"
           style={{ backgroundColor: "#8DC63F" }}
         >
-          Timeline of SPARC 2024
+          Timeline of SPARC 2025
         </div>
 
         {/* Heading */}
