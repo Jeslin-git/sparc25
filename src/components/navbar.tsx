@@ -8,8 +8,8 @@ const Navbar: React.FC = () => {
         <img src="Mace.png" alt="logo" className="w-20 h-10 sm:w-22 sm:h-12" />
       </div>
 
-      {/* Links centered */}
-      <ul className="flex flex-wrap justify-center gap-3 sm:gap-6">
+      {/* Links centered - hidden on mobile */}
+      <ul className="hidden sm:flex flex-wrap justify-center gap-3 sm:gap-6">
         {["Home", "About", "Timeline", "Sessions", "Sponsors"].map((item) => (
           <li key={item}>
             <a
