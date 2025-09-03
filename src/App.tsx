@@ -4,6 +4,7 @@ import Navbar from "./components/navbar";
 import HeroSection from "./components/herosection";
 import Timeline from "./components/timeline";
 import Registration from "./components/Registration";
+import About from "./components/About";
 import "tailwindcss";
 import './index.css';
 
@@ -18,6 +19,7 @@ const App: React.FC = () => {
        
  <Timeline/>
     <Registration /> 
+      <About />
     </div>
   );
 };
