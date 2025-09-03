@@ -74,7 +74,7 @@ export default function HeroSection() {
         }}
       >
         {/* Hero Content */}
-        <motion.div style={{ y }} className="max-w-4xl w-full relative z-10">
+        <motion.div style={{ y }} className="max-w-4xl w-full relative z-10 -mt-12">
           <h1 className="font-chillax text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-snug mb-6 drop-shadow-lg">
             <Typewriter
               words={["An experience to shape your future"]}
