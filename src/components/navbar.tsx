@@ -5,7 +5,7 @@ const Navbar: React.FC = () => {
     <nav className="absolute top-0 left-0 w-full flex items-center justify-center px-4 sm:px-8 py-6 sm:py-10 bg-white/30 backdrop-blur-md shadow-md z-50">
       {/* Logo pinned to left */}
       <div className="absolute left-4 sm:left-6 flex items-center">
-        <img src="Mace.png" alt="logo" className="w-20 h-10 sm:w-22 sm:h-12" />
+        <img src="Mace.png" alt="logo" className="w-30 h-12 sm:w-30 sm:h-12" />
       </div>
 
       {/* Links centered - hidden on mobile */}
