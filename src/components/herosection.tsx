@@ -1,55 +1,14 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 
-const Countdown: React.FC = () => {
-  const calculateTimeLeft = () => {
-    const targetDate = new Date("2025-08-01").getTime();
-    const now = new Date().getTime();
-    const difference = targetDate - now;
-
-    let timeLeft = { days: 0, hours: 0, minutes: 0, seconds: 0 };
-    if (difference > 0) {
-      timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60),
-      };
-    }
-    return timeLeft;
-  };
-
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
-    return () => clearInterval(timer);
-  }, []);
-
-  return (
-    <div className="flex flex-row justify-between items-center w-full max-w-4xl px-6 py-6 
-                    rounded-full shadow-2xl shadow-black/60 bg-[#e6f9e6] border border-green-200 mx-auto">
-      {["Days", "Hours", "Minutes", "Seconds"].map((label, idx) => (
-        <div
-          key={label}
-          className="text-center flex-1 min-w-[70px] sm:min-w-[100px]"
-        >
-          <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-green-900">
-            {Object.values(timeLeft)[idx]}
-          </p>
-          <span className="text-sm sm:text-base text-green-800">{label}</span>
-        </div>
-      ))}
-    </div>
-  );
-};
 
 export default function HeroSection() {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 300], [0, 50]);
+
+  
 
   return (
     <div className="relative">
@@ -60,21 +19,113 @@ export default function HeroSection() {
              bg-cover bg-no-repeat bg-local md:bg-fixed
              bg-[position:20%_65%] sm:bg-[position:50%_60%] lg:bg-[position:50%_55%]"
   style={{
-    backgroundImage: "url('bg.png')",
+    backgroundImage: "url('bg.jpeg')",
   }}
 >
+  {/* Falling Petals */}
+<motion.img
+  src="petal.png"
+  alt="petal"
+  className="absolute top-[-100px] left-[10%] w-10 h-10 opacity-60"
+  animate={{ y: ["-50vh", "120vh"], rotate: [0, 180] }}
+  transition={{ repeat: Infinity, duration: 12, ease: "linear" }}
+/>
+
+<motion.img
+  src="petal.png"
+  alt="petal"
+  className="absolute top-[-100px] left-[20%] w-12 h-12 opacity-60"
+  animate={{ y: ["-50vh", "120vh"], rotate: [0, 270] }}
+  transition={{ repeat: Infinity, duration: 14, ease: "linear" }}
+/>
+
+<motion.img
+  src="petal.png"
+  alt="petal"
+  className="absolute top-[-100px] left-[30%] w-8 h-8 opacity-60"
+  animate={{ y: ["-50vh", "120vh"], rotate: [0, 360] }}
+  transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
+/>
+
+<motion.img
+  src="petal.png"
+  alt="petal"
+  className="absolute top-[-100px] left-[40%] w-14 h-14 opacity-60"
+  animate={{ y: ["-50vh", "120vh"], rotate: [0, 200] }}
+  transition={{ repeat: Infinity, duration: 16, ease: "linear" }}
+/>
+
+<motion.img
+  src="petal.png"
+  alt="petal"
+  className="absolute top-[-100px] left-[50%] w-9 h-9 opacity-60"
+  animate={{ y: ["-50vh", "120vh"], rotate: [0, 150] }}
+  transition={{ repeat: Infinity, duration: 11, ease: "linear" }}
+/>
+
+<motion.img
+  src="petal.png"
+  alt="petal"
+  className="absolute top-[-100px] left-[60%] w-12 h-12 opacity-60"
+  animate={{ y: ["-50vh", "120vh"], rotate: [0, 220] }}
+  transition={{ repeat: Infinity, duration: 13, ease: "linear" }}
+/>
+
+<motion.img
+  src="petal.png"
+  alt="petal"
+  className="absolute top-[-100px] left-[70%] w-11 h-11 opacity-60"
+  animate={{ y: ["-50vh", "120vh"], rotate: [0, 180] }}
+  transition={{ repeat: Infinity, duration: 15, ease: "linear" }}
+/>
+
+<motion.img
+  src="petal.png"
+  alt="petal"
+  className="absolute top-[-100px] left-[80%] w-13 h-13 opacity-60"
+  animate={{ y: ["-50vh", "120vh"], rotate: [0, 300] }}
+  transition={{ repeat: Infinity, duration: 12, ease: "linear" }}
+/>
+
+<motion.img
+  src="petal.png"
+  alt="petal"
+  className="absolute top-[-100px] left-[15%] w-10 h-10 opacity-60"
+  animate={{ y: ["-50vh", "120vh"], rotate: [0, 200] }}
+  transition={{ repeat: Infinity, duration: 17, ease: "linear" }}
+/>
+
+<motion.img
+  src="petal.png"
+  alt="petal"
+  className="absolute top-[-100px] left-[35%] w-9 h-9 opacity-60"
+  animate={{ y: ["-50vh", "120vh"], rotate: [0, 280] }}
+  transition={{ repeat: Infinity, duration: 14, ease: "linear" }}
+/>
+
+<motion.img
+  src="petal.png"
+  alt="petal"
+  className="absolute top-[-100px] left-[55%] w-11 h-11 opacity-60"
+  animate={{ y: ["-50vh", "120vh"], rotate: [0, 250] }}
+  transition={{ repeat: Infinity, duration: 13, ease: "linear" }}
+/>
+
+<motion.img
+  src="petal.png"
+  alt="petal"
+  className="absolute top-[-100px] left-[75%] w-12 h-12 opacity-60"
+  animate={{ y: ["-50vh", "120vh"], rotate: [0, 320] }}
+  transition={{ repeat: Infinity, duration: 18, ease: "linear" }}
+/>
 
 
 
-
-
-
-
-        {/* Hero Content */}
+         {/* Hero Content */}
         <motion.div style={{ y }} className="max-w-4xl w-full relative z-10">
           <h1 className="font-chillax text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-snug mb-6 drop-shadow-lg">
             <Typewriter
-              words={["An experience to shape your future"]}
+              words={["Wishing you a happy onam"]}
               loop={false}
               cursor
               cursorStyle="|"
@@ -84,43 +135,25 @@ export default function HeroSection() {
             />
           </h1>
 
+          {/* Sub-heading */}
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.5, duration: 0.8 }}
             className="text-lg sm:text-xl md:text-2xl font-medium mb-10 text-white/90 drop-shadow-md"
           >
-            Two days of insights, innovation & inspiration.
+            Celebrate the spirit of unity, culture & tradition ✨
           </motion.p>
 
-          <motion.button
-            whileHover={{
-              scale: 1.05,
-              boxShadow: "0 0 20px rgba(34,197,94,0.7)",
-            }}
-            whileTap={{ scale: 0.95 }}
-            className="px-8 sm:px-10 py-2 sm:py-3 rounded-full font-bold text-green-900 border border-white/60 shadow-lg transition duration-300"
-            style={{
-              background:
-                "linear-gradient(145deg, rgba(255,255,255,0.5), rgba(255,255,255,0.2))",
-              boxShadow: "0 4px 12px rgba(0,0,0,0.4)",
-            }}
-          >
-            Register Now
-          </motion.button>
+          
         </motion.div>
-
-        {/* Countdown → sits across hero + green */}
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-full flex justify-center z-20">
-          <Countdown />
-        </div>
       </section>
 
-      {/* Plain green part for countdown bottom half + shadow */}
+      {/* Plain yellow patterned bottom part */}
       <div
         className="h-[100px] w-full"
         style={{
-          backgroundColor: "#e6f9e6",
+          backgroundColor: "#FFCC00",
           backgroundImage:
             "radial-gradient(circle at 20px 20px, rgba(0,0,0,0.04) 1px, transparent 1px)",
           backgroundSize: "40px 40px",
