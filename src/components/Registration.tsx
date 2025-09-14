@@ -7,7 +7,8 @@ const Registration = () => {
 
   ];
 
-  const formLink = "https://forms.gle/kHcHv2oe61TNYWCi7";
+  const ieeeFormLink = "https://forms.gle/kHcHv2oe61TNYWCi7";
+  const nonIeeeFormLink = "https://docs.google.com/forms/d/e/1FAIpQLSd60kMuUkwKotYy8TrKxe_WfNDo_QnH4iSNe4rDC5e6ncGIww/viewform?usp=header";
 
   return (
     <section
@@ -72,7 +73,7 @@ const Registration = () => {
 
               {/* Button */}
               <a
-                href={formLink}
+                href={ticket.name === "IEEE Members" ? ieeeFormLink : nonIeeeFormLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full max-w-[200px] mx-auto block bg-gradient-to-r from-[#2E7D32] to-[#8BC34A] text-white px-6 py-3 rounded-full font-semibold shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center"
