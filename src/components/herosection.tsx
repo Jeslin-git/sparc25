@@ -96,21 +96,26 @@ export default function HeroSection() {
             Two days of insights, innovation & inspiration.
           </motion.p>
 
-          <motion.button
-            whileHover={{
-              scale: 1.05,
-              boxShadow: "0 0 20px rgba(34,197,94,0.7)",
-            }}
-            whileTap={{ scale: 0.95 }}
-            className="px-8 sm:px-10 py-2 sm:py-3 rounded-full font-bold text-green-900 border border-white/60 shadow-lg transition duration-300"
-            style={{
-              background:
-                "linear-gradient(145deg, rgba(255,255,255,0.5), rgba(255,255,255,0.2))",
-              boxShadow: "0 4px 12px rgba(0,0,0,0.4)",
-            }}
-          >
-            Register Now
-          </motion.button>
+    
+<motion.a
+  href="#sessions"   // 👈 scrolls to your Registration section
+  whileHover={{
+    scale: 1.05,
+    boxShadow: "0 0 20px rgba(34,197,94,0.7)",
+  }}
+  whileTap={{ scale: 0.95 }}
+  className="px-8 sm:px-10 py-2 sm:py-3 rounded-full font-bold text-green-900 border border-white/60 shadow-lg transition duration-300"
+  style={{
+    background:
+      "linear-gradient(145deg, rgba(255,255,255,0.5), rgba(255,255,255,0.2))",
+    boxShadow: "0 4px 12px rgba(0,0,0,0.4)",
+  }}
+>
+  Register Now
+</motion.a>
+
+
+
         </motion.div>
 
         {/* Countdown */}
