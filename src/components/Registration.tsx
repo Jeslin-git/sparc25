@@ -2,8 +2,8 @@
 
 const Registration = () => {
   const ticketTypes = [
-    { id: 1, name: "IEEE Members", price: 399, image: "ticket.png" },
-    { id: 2, name: "Non-IEEE Members", price: 499, image: "ticket.png" },
+    { id: 1, name: "IEEE Members", price: 599, image: "ticket.png" },
+    { id: 2, name: "Non-IEEE Members", price: 699, image: "ticket.png" },
 
   ];
 
